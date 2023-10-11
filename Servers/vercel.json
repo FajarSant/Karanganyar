@@ -6,7 +6,6 @@
     ],
     "routes": [
       { "src": "/api/.*", "dest": "Servers/index.cjs" },
-      { "handle": "filesystem", "src": "/public/.*" },
       { "src": "/(.*)", "dest": "Frontend/public/$1" }
     ]
   }
