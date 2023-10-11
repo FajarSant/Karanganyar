@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import "../CSS/Font.css";
 import BeritaList from '../Pages/BeritaList';
 import HotNews from '../Pages/ListNews';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Home() {
   // Menggunakan useEffect

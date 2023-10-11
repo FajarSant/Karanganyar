@@ -9,7 +9,6 @@ import Pertanian from "./Pages/Pertanian";
 import Olahraga from "./Pages/Olahraga";
 import Footer from "./Components/Footer";
 import Copyright from "./Components/COPYRIGHT";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
