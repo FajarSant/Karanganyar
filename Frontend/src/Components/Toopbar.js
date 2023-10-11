@@ -22,7 +22,6 @@ const Topbar = () => {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-
   });
 
   return (
@@ -55,18 +54,11 @@ const Topbar = () => {
                     PEMKAB Karanganyar
                   </a>
                 </li>
-                <li className="list-inline-item">
-                  <a href="https://link-untuk-write-for-us" className="link-normal">
-                    Write for us
-                  </a>
-                </li>
               </ul>
             </div>
           </div>
-
           <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div className="topsearch text-right">
-              {/* Tampilkan hari dan tanggal di sini */}
+            <div className="topsearch text-left">
               <p>{formattedDate}</p>
             </div>
           </div>

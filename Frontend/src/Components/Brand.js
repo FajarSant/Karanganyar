@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Impor Bootstrap CSS
 import Brand from '../Assets/Portal_Berita.png';
 import "../CSS/Font.css";
 
