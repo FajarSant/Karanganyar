@@ -13,7 +13,7 @@ import Copyright from "./Components/COPYRIGHT";
 function App() {
   return (
     <Router>
-      <div className="Home">
+      <div className="Hompage">
         <Topbar />
         <Logo />
         <Navigation />
@@ -31,4 +31,4 @@ function App() {
   );
 }
 
-export default App;
+export default Hompage;
