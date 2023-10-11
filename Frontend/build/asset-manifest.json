@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1579f275.css",
+    "main.js": "/static/js/main.d091c063.js",
+    "static/js/787.ec64026b.chunk.js": "/static/js/787.ec64026b.chunk.js",
+    "static/media/Portal_Berita.png": "/static/media/Portal_Berita.f4b6507ee6e7b3327d3f.png",
+    "index.html": "/index.html",
+    "main.1579f275.css.map": "/static/css/main.1579f275.css.map",
+    "main.d091c063.js.map": "/static/js/main.d091c063.js.map",
+    "787.ec64026b.chunk.js.map": "/static/js/787.ec64026b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1579f275.css",
+    "static/js/main.d091c063.js"
+  ]
+}
