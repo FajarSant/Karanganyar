@@ -1,0 +1,21 @@
+# netlify.toml
+
+# Konfigurasi situs statis
+[build]
+  # Direktori sumber kode Anda
+  base = "frontend/src"
+  
+  # Perintah untuk membangun proyek Anda
+  command = "npm run build"
+
+  # Direktori tempat hasil build disimpan
+  publish = "frontend/build"
+
+# Anda juga dapat menambahkan konfigurasi lain sesuai kebutuhan proyek Anda
+
+# Konfigurasi fungsi (jika Anda memiliki fungsi serverless)
+[functions]
+  # Direktori fungsi-fungsi Anda
+  directory = "frontend/netlify/functions"
+
+# Konfigurasi lainnya, seperti pengaturan environment variables, dapat ditambahkan sesuai kebutuhan
