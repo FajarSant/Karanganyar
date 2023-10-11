@@ -9,7 +9,7 @@
   command = "npm run build"
 
   # Direktori tempat hasil build frontend disimpan
-  publish = "Frontend/build/"
+  publish = "build/"
 
 # Anda juga dapat menambahkan konfigurasi lain sesuai kebutuhan proyek Anda
 
