@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "public/package.json",
+        "use": "@vercel/static-build",
+        "config": { "distDir": "build" }
+      }
+    ],
+    "routes": [
+      { "handle": "filesystem" },
+      { "src": "/api/.*", "dest": "frontend/src/Servers/index.cjs" },
+      { "src": "/listnews/.*", "dest": "frontend/src/Servers/ListNews.cjs" },
+      { "src": "/hotnews/.*", "dest": "frontend/src/Servers/HotNews.cjs" },
+      { "src": "/(.*)", "dest": "frontend/public/index.html" }
+    ]
+  }
+  
