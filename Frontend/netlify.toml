@@ -2,20 +2,20 @@
 
 # Konfigurasi situs statis
 [build]
-  # Direktori sumber kode Anda
-  base = "Frontend/src"
-  
-  # Perintah untuk membangun proyek Anda
+  # Direktori sumber kode frontend Anda
+  base = "Frontend/"
+
+  # Perintah untuk membangun proyek frontend Anda
   command = "npm run build"
 
-  # Direktori tempat hasil build disimpan
-  publish = "Frontend/build"
+  # Direktori tempat hasil build frontend disimpan
+  publish = "Frontend/build/"
 
 # Anda juga dapat menambahkan konfigurasi lain sesuai kebutuhan proyek Anda
 
 # Konfigurasi fungsi (jika Anda memiliki fungsi serverless)
 [functions]
   # Direktori fungsi-fungsi Anda
-  directory = "Frontend/netlify/functions"
+  directory = "Frontend/netlify/functions/"
 
 # Konfigurasi lainnya, seperti pengaturan environment variables, dapat ditambahkan sesuai kebutuhan
