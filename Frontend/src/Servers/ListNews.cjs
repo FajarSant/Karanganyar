@@ -4,7 +4,7 @@ const cheerio = require("cheerio");
 const Sentiment = require("sentiment");
 
 const app = express();
-const port = 4001;
+const port = 4004;
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");

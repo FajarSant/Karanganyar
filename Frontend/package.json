@@ -22,11 +22,16 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"npm run start-servers\" \"npm run start-client\"",
+    "start-servers": "concurrently \"npm run start-server\" \"npm run start-listnews\" \"npm run start-hotnews\"",
+    "start-server": "nodemon src/Servers/index.cjs",
+    "start-listnews": "nodemon src/Servers/ListNews.cjs",
+    "start-hotnews": "nodemon src/Servers/HotNews.cjs",
+    "start-client": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
+  },  
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -44,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1"
   }
 }
