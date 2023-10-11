@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.149f6313.css",
-    "main.js": "/static/js/main.d68bfb94.js",
+    "main.css": "/static/css/main.cfd772cc.css",
+    "main.js": "/static/js/main.d77db550.js",
     "static/js/787.ec64026b.chunk.js": "/static/js/787.ec64026b.chunk.js",
     "static/media/Portal_Berita.png": "/static/media/Portal_Berita.f4b6507ee6e7b3327d3f.png",
     "index.html": "/index.html",
-    "main.149f6313.css.map": "/static/css/main.149f6313.css.map",
-    "main.d68bfb94.js.map": "/static/js/main.d68bfb94.js.map",
+    "main.cfd772cc.css.map": "/static/css/main.cfd772cc.css.map",
+    "main.d77db550.js.map": "/static/js/main.d77db550.js.map",
     "787.ec64026b.chunk.js.map": "/static/js/787.ec64026b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.149f6313.css",
-    "static/js/main.d68bfb94.js"
+    "static/css/main.cfd772cc.css",
+    "static/js/main.d77db550.js"
   ]
 }
