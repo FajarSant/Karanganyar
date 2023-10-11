@@ -1,12 +1,12 @@
 {
     "version": 2,
     "builds": [
-      { "src": "/Servers/index.js", "use": "@vercel/node" }
+      { "src": "/", "use": "@vercel/node" }
     ],
     "routes": [
-      { "src": "/api/.*", "dest": "/Servers/index.js" },
+      { "src": "/api/.*", "dest": "/Servers/index.cjs,ListNews.cjs,HotNews.cjs" },
       { "handle": "filesystem" },
-      { "src": "/.*", "dest": "index.html" }
+      { "src": "/Frontend.*", "dest": "public/index.html" }
     ]
   }
   
