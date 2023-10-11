@@ -21,7 +21,7 @@ function Footbar() {
             <h5 className="text-white text-uppercase font-weight-bold">Sosial Media</h5>
             <div className="d-flex">
               <a
-                href="#"
+                href="https://www.facebook.com/karanganyarkab.go.id"
                 data-toggle="tooltip"
                 data-placement="bottom"
                 title="Facebook"
@@ -30,7 +30,7 @@ function Footbar() {
                 <FontAwesomeIcon icon={faFacebook} size="lg" />
               </a>
               <a
-                href="#"
+                href="https://twitter.com/karanganyarkab"
                 data-toggle="tooltip"
                 data-placement="bottom"
                 title="Twitter"
@@ -39,7 +39,7 @@ function Footbar() {
                 <FontAwesomeIcon icon={faTwitter} size="lg" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/diskominfo_karanganyar/"
                 data-toggle="tooltip"
                 data-placement="bottom"
                 title="Instagram"

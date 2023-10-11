@@ -31,13 +31,13 @@ const Topbar = () => {
         <div className="row">
           <div className="col-lg-4 col-md-6 col-sm-6 d-none d-sm-block">
             <div className="topsocial">
-              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook">
+              <a href="https://www.facebook.com/karanganyarkab.go.id" data-toggle="tooltip" data-placement="bottom" title="Facebook">
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
-              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter">
+              <a href="https://twitter.com/karanganyarkab" data-toggle="tooltip" data-placement="bottom" title="Twitter">
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
-              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Instagram">
+              <a href="https://www.instagram.com/diskominfo_karanganyar/" data-toggle="tooltip" data-placement="bottom" title="Instagram">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </div>

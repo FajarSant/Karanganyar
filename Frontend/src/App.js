@@ -31,4 +31,4 @@ function App() {
   );
 }
 
-export default Hompage;
+export default App;
