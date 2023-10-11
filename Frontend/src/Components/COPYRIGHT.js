@@ -1,5 +1,7 @@
 import React from "react"
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function Copyright () {
     return(
         <div className="container-fluid py-4 px-sm-3 px-md-5" style={{ background: '#111111' }}>

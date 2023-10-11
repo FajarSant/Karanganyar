@@ -2,6 +2,9 @@ import React from 'react';
 import Brand from '../Assets/Portal_Berita.png';
 import "../CSS/Font.css";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 const Logo = () => {
   return (
     <div className="header-section text-center mt-1"> {/* Tambahkan class "text-center" dan "mt-5" */}
