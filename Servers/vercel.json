@@ -1,17 +1,13 @@
 {
     "version": 2,
     "builds": [
-      { "src": "/Frontend", "use": "@vercel/static-build" },
-      { "src": "/Servers/index.cjs", "use": "@vercel/node" },
-      { "src": "/Servers/ListNews.cjs", "use": "@vercel/node" },
-      { "src": "/Servers/HotNews.cjs", "use": "@vercel/node" }
+      { "src": "Frontend/Build", "use": "@vercel/static-build" },
+      { "src": "Servers/index.cjs", "use": "@vercel/node" }
     ],
     "routes": [
-      { "src": "/api/.*", "dest": "/Servers/index.cjs" },
-      { "src": "/api/.*", "dest": "/Servers/ListNews.cjs" },
-      { "src": "/api/.*", "dest": "/Servers/HotNews.cjs" },
-      { "handle": "filesystem" },
-      { "src": "/.*", "dest": "/Frontend/public/index.html" }
+      { "src": "/api/.*", "dest": "Servers/index.cjs" },
+      { "handle": "filesystem", "src": "/public/.*" },
+      { "src": "/(.*)", "dest": "Frontend/public/$1" }
     ]
   }
   
