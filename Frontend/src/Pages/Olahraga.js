@@ -10,7 +10,7 @@ function Olahraga() {
   useEffect(() => {
     // Mengambil data berita dari server backend jika halaman masih dalam batas maksimum
     if (page <= maxPages) {
-      axios.get(`http://localhost:4001/Sport?page=${page}`) // Ganti dengan URL server backend Anda
+      axios.get(`http://localhost:4003/Sport?page=${page}`) // Ganti dengan URL server backend Anda
         .then((response) => {
           setBerita((prevBerita) => [...prevBerita, ...response.data]); // Menggabungkan berita yang sudah ada dengan berita yang baru
         })

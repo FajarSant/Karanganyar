@@ -7,7 +7,7 @@ function Pendidikan() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4001/Pendidikan") // Ganti URL dengan URL server backend Anda
+      .get("http://localhost:4004/Pendidikan")
       .then((response) => {
         setBerita(response.data);
       })
@@ -16,66 +16,66 @@ function Pendidikan() {
       });
   }, []);
 
-  // Fungsi untuk mendapatkan kelas warna berdasarkan sentimen
   const getSentimentColorClass = (score) => {
     if (score > 0) {
-      return "btn-success"; // Hijau untuk sentimen positif
+      return "btn-success";
     } else if (score < 0) {
-      return "btn-danger"; // Merah untuk sentimen negatif
+      return "btn-danger";
     } else {
-      return "btn-secondary"; // Abu-abu untuk sentimen netral
+      return "btn-secondary";
     }
   };
 
-  // Fungsi untuk mendapatkan penjelasan sentimen
   const getSentimentExplanation = (score) => {
     if (score > 0) {
-      return "Positif"; // Penjelasan untuk sentimen positif
+      return "Positif";
     } else if (score < 0) {
-      return "Negatif"; // Penjelasan untuk sentimen negatif
+      return "Negatif";
     } else {
-      return "Netral"; // Penjelasan untuk sentimen netral
+      return "Netral";
     }
+  };
+
+  const cardStyle = {
+    height: "200px",
+    objectFit: "cover",
+  };
+
+  const titleStyle = {
+    color: "black",
+    transition: "color 0.3s",
+    textAlign: "justify",
+    fontSize: "30px",
   };
 
   return (
     <div className="App">
       <div className="container">
         <div className="row">
-          {berita.map((item, index) => (
-            <div key={index} className="col-md-4">
+          {berita.map((item) => (
+            <div key={item.link} className="col-md-4">
               <div className="card mb-4">
-                <img
-                  src={item.imgSrc}
-                  alt={item.title}
-                  className="card-img-top"
-                  style={{ height: "200px", objectFit: "cover" }}
-                />
+                <img src={item.imgSrc} alt={item.title} className="card-img-top" style={cardStyle} />
                 <div className="card-body">
                   <p className="card-text">
-                    <button
-                      className={`btn ${getSentimentColorClass(
-                        item.sentiment.score
-                      )}`}
-                    >
+                    <button className={`btn ${getSentimentColorClass(item.sentiment.score)}`}>
                       {getSentimentExplanation(item.sentiment.score)}
                     </button>
                   </p>
-                  <a href={item.link} style={{ textDecoration: "none" }}> {/* Menghapus garis bawah */}
+                  <a href={item.link} style={{ textDecoration: "none" }}>
                     <h2
                       className="card-title"
-                      style={{ color: "black", transition: "color 0.3s", textAlign:"justify", fontSize:"30px" }}
+                      style={titleStyle}
                       onMouseOver={(e) => (e.target.style.color = "blue")}
                       onMouseOut={(e) => (e.target.style.color = "black")}
                     >
                       {item.title}
                     </h2>
                   </a>
-                  <p style={{textAlign:"justify", fontSize:"20px"}}>{item.description}</p>
+                  <p style={{ textAlign: "justify", fontSize: "20px" }}>{item.description}</p>
                   <p className="card-text">
                     <small className="text-muted">
-                      Tanggal: {item.date} |
-                      Penulis: {item.author}
+                      Tanggal: {item.date} | Penulis: {item.author}
                     </small>
                   </p>
                 </div>

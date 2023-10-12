@@ -7,7 +7,7 @@ function Pertanian() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4001/Pertanian") // Ganti URL dengan URL server backend Anda
+      .get("http://localhost:4005/Pertanian") // Ganti URL dengan URL server backend Anda
       .then((response) => {
         setBerita(response.data);
       })

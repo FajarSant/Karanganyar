@@ -8,7 +8,7 @@ function BeritaList() {
   useEffect(() => {
     // Mengambil data dari server scraping
     axios
-      .get("http://localhost:4004/List")
+      .get("http://localhost:4002/list")
       .then((response) => {
         setBerita(response.data);
       })
