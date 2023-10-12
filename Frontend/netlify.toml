@@ -1,21 +1,18 @@
-# netlify.toml
-
-# Konfigurasi situs statis
 [build]
-  # Direktori sumber kode frontend Anda
-  base = "Frontend/"
-
-  # Perintah untuk membangun proyek frontend Anda
   command = "npm run build"
+  publish = "build"  # Direktori tempat hasil build proyek React akan disimpan
 
-  # Direktori tempat hasil build frontend disimpan
-  publish = "build/"
+[dev]
+  command = "npm run start"
+  functions = "lambda"  # Direktori tempat fungsi Netlify serverless akan ditempatkan
 
-# Anda juga dapat menambahkan konfigurasi lain sesuai kebutuhan proyek Anda
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
-# Konfigurasi fungsi (jika Anda memiliki fungsi serverless)
-[functions]
-  # Direktori fungsi-fungsi Anda
-  directory = "Frontend/netlify/functions/"
-
-# Konfigurasi lainnya, seperti pengaturan environment variables, dapat ditambahkan sesuai kebutuhan
+[[redirects]]
+  from = "/api/*"
+  to = "http://localhost:3001/:splat"
+  status = 200
+  force = true
