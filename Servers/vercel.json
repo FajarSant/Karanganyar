@@ -1,15 +1,16 @@
 {
   "version": 2,
   "builds": [
-    { "src": "index.cjs", "use": "@vercel/node" },
-    { "src": "HotNews.cjs", "use": "@vercel/node" },
-    { "src": "ListNews.cjs", "use": "@vercel/node" },
-    { "src": "Berita.cjs", "use": "@vercel/node" }
+    { "src": "Servers/index.cjs", "use": "@vercel/node" },
+    { "src": "Servers/HotNews.cjs", "use": "@vercel/node" },
+    { "src": "Servers/ListNews.cjs", "use": "@vercel/node" },
+    { "src": "Servers/Berita.cjs", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/Servers/api/HotNews", "dest": "HotNews.cjs" },
-    { "src": "/Servers/api/ListNews", "dest": "ListNews.cjs" },
-    { "src": "/Servers/api/Berita", "dest": "Berita.cjs" }
+    { "src": "/api/hotnews", "dest": "Servers/HotNews.cjs" },
+    { "src": "/api/listnews", "dest": "Servers/ListNews.cjs" },
+    { "src": "/api/Berita", "dest": "Servers/Berita.cjs" },
+    { "src": "/(.*)", "dest": "Servers/index.cjs" }
   ],
   "env": {
     "NODE_ENV": "production"
