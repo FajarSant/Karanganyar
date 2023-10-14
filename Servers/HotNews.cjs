@@ -8,7 +8,7 @@ const port = 4003; // Ganti dengan port yang Anda inginkan
 
 // Middleware untuk mengizinkan permintaan lintas domain (CORS)
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4000');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   next();
