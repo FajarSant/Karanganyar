@@ -6,7 +6,7 @@
     { "src": "/api/hotnews", "dest": "Servers/HotNews.cjs" },
     { "src": "/api/listnews", "dest": "Servers/ListNews.cjs" },
     { "src": "/api/Berita", "dest": "Servers/Berita.cjs" },
-    { "src": "/(.*)", "dest": "Servers/index.cjs" }
+    { "src": "/(.*)", "dest": "Servers/index.js" }
   ],
   "env": {
     "NODE_ENV": "production"
