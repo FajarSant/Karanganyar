@@ -3,12 +3,13 @@
   "builds": [
     { "src": "index.cjs", "use": "@vercel/node" },
     { "src": "HotNews.cjs", "use": "@vercel/node" },
-    { "src": "ListNews.cjs", "use": "@vercel/node" }
+    { "src": "ListNews.cjs", "use": "@vercel/node" },
+    { "src": "Berita.cjs", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/api/hotnews", "dest": "HotNews.cjs" },
     { "src": "/api/listnews", "dest": "ListNews.cjs" },
-    { "src": "/(.*)", "dest": "index.cjs" }
+    { "src": "/api/berita", "dest": "Berita.cjs" }
   ],
   "env": {
     "NODE_ENV": "production"
