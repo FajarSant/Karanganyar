@@ -1,10 +1,6 @@
 {
   "version": 2,
   "builds": [
-    { "src": "Servers/index.cjs", "use": "@vercel/node" },
-    { "src": "Servers/HotNews.cjs", "use": "@vercel/node" },
-    { "src": "Servers/ListNews.cjs", "use": "@vercel/node" },
-    { "src": "Servers/Berita.cjs", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/api/hotnews", "dest": "Servers/HotNews.cjs" },
