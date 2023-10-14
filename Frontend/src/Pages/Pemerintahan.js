@@ -8,7 +8,7 @@ function Pemerintahan() {
   useEffect(() => {
     // Mengambil data berita dari server backend
     axios
-      .get("http://localhost:4001/HotNews") // Ganti dengan URL server backend Anda
+      .get("https://karanganyar-servers1.vercel.app/HotNews") // Ganti dengan URL server backend Anda
       .then((response) => {
         setBerita(response.data);
       })
