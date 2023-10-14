@@ -13,7 +13,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get("/list", async (req, res) => {
+app.get("https://karanganyar-b8e7.vercel.app/api/Berita", async (req, res) => {
   try {
     const url = "https://soloraya.solopos.com/karanganyar"; // Ganti dengan URL sumber berita Anda
 
