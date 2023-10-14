@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "CommonJS",
+      "outDir": "./dist",
+      "strict": true
+    },
+    "include": ["Frontend/src/Pages/*.ts"],
+    "exclude": ["node_modules"]
+  }
+  
