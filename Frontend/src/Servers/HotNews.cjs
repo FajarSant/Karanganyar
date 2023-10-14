@@ -15,7 +15,7 @@ app.use((req, res, next) => {
 });
 
 // Endpoint untuk melakukan scraping dan mengambil data berita
-app.get('/HotNews', (req, res) => {
+app.get('https://karanganyar-b8e7.vercel.app/api/hotnews', (req, res) => {
   const url = 'https://www.detik.com/tag/bupati-karanganyar?tag_from=karanganyar';
 
   axios.get(url)
