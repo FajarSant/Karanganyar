@@ -8,7 +8,7 @@ function BeritaList() {
   useEffect(() => {
     // Mengambil data dari server scraping
     axios
-      .get("http://localhost:4002/list")
+      .get("https://karanganyar-b8e7.vercel.app/api/Berita")
       .then((response) => {
         setBerita(response.data);
       })
