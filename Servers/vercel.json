@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "index.cjs", "use": "@vercel/node" },
+    { "src": "HotNews.cjs", "use": "@vercel/node" },
+    { "src": "ListNews.cjs", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/hotnews", "dest": "HotNews.cjs" },
+    { "src": "/api/listnews", "dest": "ListNews.cjs" },
+    { "src": "/(.*)", "dest": "index.cjs" }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
