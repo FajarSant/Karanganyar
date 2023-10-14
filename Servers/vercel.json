@@ -6,9 +6,9 @@
     { "src": "api/Berita.cjs", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/api/hotnews", "dest": "api/HotNews.cjs" },
-    { "src": "/api/listnews", "dest": "api/ListNews.cjs" },
-    { "src": "/api/berita", "dest": "api/Berita.cjs" },
+    { "src": "/api/hotnews", "dest": "Servers/HotNews.cjs" },
+    { "src": "/api/listnews", "dest": "Servers/ListNews.cjs" },
+    { "src": "/api/berita", "dest": "Servers/Berita.cjs" },
     { "src": "/(.*)", "dest": "Servers/index.js" }
   ],
   "env": {
