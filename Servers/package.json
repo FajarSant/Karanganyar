@@ -27,6 +27,7 @@
     "react-script": "^2.0.5",
     "react-sidebar": "^3.0.2",
     "sentiment": "^5.0.2",
+    "typescript": "^5.2.2",
     "web-vitals": "^3.5.0"
   }
 }
