@@ -13,7 +13,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/https://karanganyar-b8e7.vercel.app/api/Berita', async (req, res) => {
+app.get('/Pendidikan', async (req, res) => {
   const url = 'https://www.solopos.com/tag/pendidikan-karanganyar';
 
   try {

@@ -3,9 +3,9 @@
   "builds": [
   ],
   "routes": [
-    { "src": "/api/hotnews", "dest": "Servers/HotNews.cjs" },
-    { "src": "/api/listnews", "dest": "Servers/ListNews.cjs" },
-    { "src": "/api/Berita", "dest": "Servers/Berita.cjs" },
+    { "src": "/api/hotnews", "dest": "Frontend/src/Pages/HotNews.js" },
+    { "src": "/api/listnews", "dest": "Frontend/src/Pages/ListNews.cjs" },
+    { "src": "/api/Berita", "dest": "Frontend/src/Pages/Berita.cjs" },
     { "src": "/(.*)", "dest": "Servers/index.js" }
   ],
   "env": {
