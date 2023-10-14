@@ -1,8 +1,8 @@
-import express from 'express';
-import axios from 'axios';
-import cheerio from 'cheerio';
-import Sentiment from 'sentiment';
-import { send } from '@vercel/node'; // Import modul send dari Vercel
+const express = require('express');
+const axios = require('axios');
+const cheerio = require('cheerio');
+const Sentiment = require('sentiment');
+const { send } = require('@vercel/node');
 
 const app = express();
 const port = 4003;
@@ -21,7 +21,7 @@ app.get('/HotNews', (req, res) => {
     .then(async (response) => {
       const html = response.data;
       const $ = cheerio.load(html);
-      
+
       const beritaElements = $('.l_content article');
 
       const beritaData = [];
